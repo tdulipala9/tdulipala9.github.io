@@ -1,0 +1,28 @@
+.floating-word {
+    position: absolute;
+    top: 100vh;
+    color: rgba(50, 205, 50, 0.15); /* light lime green */
+    font-size: clamp(18px, 3vw, 28px);
+    font-weight: 600;
+    white-space: nowrap;
+    pointer-events: none;
+    animation: floatWord 18s linear infinite;
+    font-family: "SF Pro Display", sans-serif;
+}
+
+@keyframes floatWord {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) translateX(20px);
+        opacity: 0;
+    }
+}
